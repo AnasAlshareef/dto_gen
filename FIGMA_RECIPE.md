@@ -12,14 +12,14 @@ map to your house patterns. This is the flow to paste/ask for.
    don't re-trace vectors by hand.
 3. **Map to conventions, not raw CSS:**
 
-   **React (LSP: Vite + Tailwind v4, RTL Arabic):**
+   **React (Vite + Tailwind v4, RTL Arabic):**
    - Auto-layout → flex; gap/padding → Tailwind spacing tokens, not arbitrary px.
    - RTL: `dir="rtl"`, logical props (`ps-`/`pe-`, `start`/`end`), never `left`/`right`.
    - Tailwind v4 gotcha (your memory): nested `rgba()`/gradients in arbitrary
      values silently fail — use inline `style` for those.
    - Build from the node tree top-down; one component per Figma frame.
 
-   **Flutter (Pengu etc.):**
+   **Flutter:**
    - Auto-layout → `Column`/`Row` + `SizedBox`/`Padding`; no magic numbers, pull
      a spacing constant.
    - Lists → `ListView.builder`/slivers, `.map` only for short static rows
