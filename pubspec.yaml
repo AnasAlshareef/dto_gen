@@ -1,0 +1,9 @@
+name: dto_gen
+description: Generate dart_mappable DTO classes from a JSON API sample, in our conventions.
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
+
+executables:
+  dto_gen:
